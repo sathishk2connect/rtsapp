@@ -3,16 +3,16 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DataService
 {
-    sourcePools: {sourcePoolID: number, label: string}[];
+    sourcePools: {sourcePoolID: number, sourcePoolName: string, jobType: string[]}[];
     pts: {ptsID: number, label: string}[];
     countries: {countryID: number, label: string}[];
 
     constructor(){
         this.sourcePools = [
-            {sourcePoolID: 332343232, label: 'Pool1'},
-            {sourcePoolID: 234234323, label: 'Pool2'},
-            {sourcePoolID: 326643454, label: 'Pool3'},
-            {sourcePoolID: 347754565, label: 'Pool4'}
+            {sourcePoolID: 332343232, sourcePoolName: 'MySourcePool', jobType: ['1','2','3']},
+            {sourcePoolID: 234234323, sourcePoolName: 'MySourcePool', jobType: ['1','2','3']},
+            {sourcePoolID: 326643454, sourcePoolName: 'MySourcePool', jobType: ['1','2','3']},
+            {sourcePoolID: 347754565, sourcePoolName: 'MySourcePool', jobType: ['1','2','3']},
         ];
           this.pts = [
             {ptsID: 332343232, label: '332343232'},

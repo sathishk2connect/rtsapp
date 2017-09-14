@@ -14,7 +14,7 @@ export class TaskEntryComponent implements OnInit {
     
     model: Task;
 
-    sourcePools: {sourcePoolID: number, label: string}[];
+    sourcePools: {sourcePoolID: number, sourcePoolName: string, jobType: string[]}[];
     pts: {ptsID: number, label: string}[];
     countries: {countryID: number, label: string}[];
 

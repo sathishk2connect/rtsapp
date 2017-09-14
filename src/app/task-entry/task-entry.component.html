@@ -3,7 +3,7 @@
     <div class="form-group">
         <label for="sourcePool">Source Pool ID</label>
         <select name="sourcePool" class="form-control" id="sourcePool" [(ngModel)]="model.sourcePoolID">
-            <option *ngFor="let sp of sourcePools"  [ngValue]="sp.sourcePoolID">{{sp.label}}</option>
+            <option *ngFor="let sp of sourcePools"  [ngValue]="sp.sourcePoolID">{{sp.sourcePoolName}}</option>
         </select>
     </div>
     <div class="form-group">
