@@ -1,0 +1,13 @@
+
+<div class="row">
+    <div class="col-sm-5">
+        <task-entry (addTask)="updateTaskList($event)"> </task-entry>
+    </div>
+
+    <div class="splitter">
+    </div>
+
+    <div class="col-sm-7">
+        <timesheet-entry [tasks]="taskList"> </timesheet-entry>
+    </div>
+</div>
