@@ -12,10 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TaskEntryComponent } from './task-entry/task-entry.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { TimesheetEntryComponent } from './timesheet-entry/timesheet-entry.component';
-<<<<<<< HEAD
 import { SearchEntryComponent } from './search-entry/search-entry.component';
-=======
->>>>>>> ce5d51ac5f21bcf022a1554de39614af52a6ef46
 
 const appRoutes: Routes = [
   {
@@ -35,12 +32,8 @@ const appRoutes: Routes = [
     DashboardComponent,
     TaskEntryComponent,
     TaskListComponent,
-<<<<<<< HEAD
     TimesheetEntryComponent,
     SearchEntryComponent
-=======
-    TimesheetEntryComponent
->>>>>>> ce5d51ac5f21bcf022a1554de39614af52a6ef46
   ],
   imports: [
     BrowserModule,
