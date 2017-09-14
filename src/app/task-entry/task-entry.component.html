@@ -1,0 +1,48 @@
+<div>
+    <form>
+    <div class="form-group">
+        <label for="sourcePool">Source Pool ID</label>
+        <select name="sourcePool" class="form-control" id="sourcePool" [(ngModel)]="model.sourcePoolID">
+            <option *ngFor="let sp of sourcePools"  [ngValue]="sp.sourcePoolID">{{sp.label}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="pts">PTS ID</label>
+        <select name="pts" class="form-control" id="pts"  [(ngModel)]="model.ptsID">
+          <option *ngFor="let p of pts" [ngValue]="p.ptsID">{{p.label}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="jobType">Job Type</label>
+        <select class="form-control" id="jobType">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+     <div class="form-group">
+        <label  for="country">Country</label>
+        <select name="country" class="form-control" [(ngModel)]="model.countryID">>
+            <option *ngFor="let c of countries" [ngValue]="c.countryID">{{c.label}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleTextarea">Task Description</label>
+        <textarea class="form-control" id="taskDesc" rows="3"></textarea>
+    </div>
+    <div class="form-group row">
+             <div class="col-md-5">
+                <input class="form-control" type="date" name="fromDate" id="fromDate">
+             </div>
+            <div class="col-md-5">
+                <input class="form-control" type="date" name="toDate" id="toDate">
+            </div>
+            <div class="col-md-2">
+                <input class="form-control" type="text" name="hours" id="hours">
+            </div>
+    </div>
+    <button type="submit" (click)="submit()" class="btn btn-primary">Add Task</button>
+    </form>
+</div>
