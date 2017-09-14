@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
  <div> 
     <div class="row"  *ngFor="let d of dateEntries" [ngStyle]="{'height.px': 100}"> 
@@ -9,4 +10,23 @@
          <div> {{t.Description}} </div>
     </div> 
   </div> 
+=======
+<div style="overflow-x:scroll;overflow-y:hidden;height:600px;padding: 0 15px; white-space: nowrap;">
+       <div style="width: 7000px"> 
+         <div  class="container" *ngFor="let d of dateEntries" style="float:left; background: #fff;
+                      width: 200px;"> 
+             <div class="row" >
+              <div class="col">
+                  <span>{{ d.entryDate | date:'dd/MM/yyyy'}}</span>
+               </div>
+             </div>
+            <div class="row">
+                  <div *ngFor="let t of d.tasks" class="col">
+                        <div>  {{t.ptsID}}  </div>
+                        <div> {{t.Description}} </div>
+                  </div>
+              </div>  
+          </div>
+    </div>
+>>>>>>> ce5d51ac5f21bcf022a1554de39614af52a6ef46
 </div>
